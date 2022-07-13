@@ -17,6 +17,9 @@ project "Potato"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+
+	pchheader "ptpch.h"
+	pchsource "Potato/src/ptpch.cpp"
 	
 	files
 	{
@@ -26,8 +29,8 @@ project "Potato"
 
 	includedirs
 	{
-		"%{prj.name}/src",
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include",
+		"Potato/src",
 	}
 
 	filter "system:windows"

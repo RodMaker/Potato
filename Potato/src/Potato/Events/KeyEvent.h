@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Potato {
 
 	class POTATO_API KeyEvent : public Event

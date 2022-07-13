@@ -2,11 +2,9 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Potato {
 
-	class POTATO_API WindowResizeEvent : public Event 
+	class POTATO_API WindowResizeEvent : public Event
 	{
 	public:
 		WindowResizeEvent(unsigned int width, unsigned int height)

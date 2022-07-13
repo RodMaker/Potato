@@ -7,6 +7,12 @@
     <Filter Include="Potato\Events">
       <UniqueIdentifier>{60179B6E-CCD7-16A5-9512-602201925B81}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{067e7719-28c2-4e62-a648-97119efcc8eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows">
+      <UniqueIdentifier>{e7caedd4-b2bf-4cff-ac5a-b06c980dd435}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Potato.h" />
@@ -35,6 +41,12 @@
       <Filter>Potato</Filter>
     </ClInclude>
     <ClInclude Include="src\ptpch.h" />
+    <ClInclude Include="Window.h">
+      <Filter>Potato</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowsWindow.h">
+      <Filter>Platform\Windows</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Potato\Application.cpp">
@@ -44,5 +56,8 @@
       <Filter>Potato</Filter>
     </ClCompile>
     <ClCompile Include="src\ptpch.cpp" />
+    <ClCompile Include="WindowsWindow.cpp">
+      <Filter>Platform\Windows</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

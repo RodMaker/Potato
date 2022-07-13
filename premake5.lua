@@ -10,6 +10,13 @@ workspace "Potato"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+-- Include directories relative to root folder (solution directory)
+IncludeDir = {}
+IncludeDir["GLFW"] = "Potato/vendor/GLFW/include"
+
+-- includes the GLFW premake file into this one
+include "Potato/vendor/GLFW" 
+
 project "Potato"
 	location "Potato"
 	kind "SharedLib"
@@ -31,6 +38,13 @@ project "Potato"
 	{
 		"%{prj.name}/vendor/spdlog/include",
 		"Potato/src",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links
+	{
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"

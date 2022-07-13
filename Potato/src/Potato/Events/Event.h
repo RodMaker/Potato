@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Core.h"
+#include "Potato/Core.h"
 
 namespace Potato {
 

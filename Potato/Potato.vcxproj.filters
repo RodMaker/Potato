@@ -19,6 +19,10 @@
     <ClInclude Include="src\Potato\Log.h">
       <Filter>Potato</Filter>
     </ClInclude>
+    <ClInclude Include="src\Potato\Events\Event.h" />
+    <ClInclude Include="src\Potato\Events\ApplicationEvent.h" />
+    <ClInclude Include="src\Potato\Events\KeyEvent.h" />
+    <ClInclude Include="src\Potato\Events\MouseEvent.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Potato\Application.cpp">

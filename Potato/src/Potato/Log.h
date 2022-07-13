@@ -4,6 +4,7 @@
 
 #include "Core.h"
 #include "spdlog/spdlog.h"
+#include "spdlog/fmt/ostr.h"
 
 namespace Potato {
 
@@ -22,11 +23,11 @@ namespace Potato {
 }
 
 // CORE log macros
-#define PT_CORE_TRACE(...)   ::Potato::Log::GetClientLogger()->trace(__VA_ARGS__)
-#define PT_CORE_INFO(...)    ::Potato::Log::GetClientLogger()->info(__VA_ARGS__)
-#define PT_CORE_WARN(...)    ::Potato::Log::GetClientLogger()->warn(__VA_ARGS__)
-#define PT_CORE_ERROR(...)   ::Potato::Log::GetClientLogger()->error(__VA_ARGS__)
-#define PT_CORE_FATAL(...)   ::Potato::Log::GetClientLogger()->fatal(__VA_ARGS__)
+#define PT_CORE_TRACE(...)   ::Potato::Log::GetCoreLogger()->trace(__VA_ARGS__)
+#define PT_CORE_INFO(...)    ::Potato::Log::GetCoreLogger()->info(__VA_ARGS__)
+#define PT_CORE_WARN(...)    ::Potato::Log::GetCoreLogger()->warn(__VA_ARGS__)
+#define PT_CORE_ERROR(...)   ::Potato::Log::GetCoreLogger()->error(__VA_ARGS__)
+#define PT_CORE_FATAL(...)   ::Potato::Log::GetCoreLogger()->fatal(__VA_ARGS__)
 
 // CLIENT log macros
 #define PT_TRACE(...)        ::Potato::Log::GetClientLogger()->trace(__VA_ARGS__)

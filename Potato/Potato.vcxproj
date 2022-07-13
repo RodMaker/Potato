@@ -147,6 +147,10 @@
     <ClInclude Include="src\Potato\Application.h" />
     <ClInclude Include="src\Potato\Core.h" />
     <ClInclude Include="src\Potato\EntryPoint.h" />
+    <ClInclude Include="src\Potato\Events\ApplicationEvent.h" />
+    <ClInclude Include="src\Potato\Events\Event.h" />
+    <ClInclude Include="src\Potato\Events\KeyEvent.h" />
+    <ClInclude Include="src\Potato\Events\MouseEvent.h" />
     <ClInclude Include="src\Potato\Log.h" />
   </ItemGroup>
   <ItemGroup>

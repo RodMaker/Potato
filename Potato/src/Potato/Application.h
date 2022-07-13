@@ -1,10 +1,11 @@
 #pragma once
 
 #include "Core.h"
+#include "Events/Event.h"
 
 namespace Potato {
 
-	class __declspec(dllexport) Application
+	class POTATO_API Application
 	{
 	public:
 		Application();

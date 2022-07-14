@@ -1,7 +1,7 @@
 # Potato
 Potato Engine
 
-![PotatoEngineIcon](/assets/images/icon.png)
+![PotatoEngineIcon](Potato/icon.png)
 
 Potato is my take on the Hazel Engine, following Cherno's tutorials available at his youtube channel.
 

@@ -1,7 +1,7 @@
 # Potato
 Potato Engine
 
-![PotatoEngineIcon](Potato/icon.png)
+![PotatoEngineIcon](https://github.com/RodMaker/Potato/blob/main/icon.png)
 
 Potato is my take on the Hazel Engine, following Cherno's tutorials available at his youtube channel.
 

@@ -2,7 +2,7 @@
 
 #include "ptpch.h"
 
-#include "Core.h"
+#include "Potato/Core.h"
 #include "Potato/Events/Event.h"
 
 namespace Potato {
